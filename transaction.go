@@ -1,4 +1,4 @@
-package p2p
+package gop2p
 
 type Transaction struct {
   amout int

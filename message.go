@@ -1,4 +1,4 @@
-package p2p
+package gop2p
 
 
 // MessageType represents a message type between the peers:
