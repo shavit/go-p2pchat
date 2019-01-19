@@ -91,7 +91,7 @@ func (s *server) Start() (err error){
 //  The server will announce to the peers that it going to shutdown.
 func (s *server) Close(err error) {
   if err != nil {
-    log.Println("Exit with error", err)
+    log.Println("Exit with error:", err)
   }
 
   s.Lock()
@@ -101,8 +101,9 @@ func (s *server) Close(err error) {
 
   // Close the network connection
   err = s.ln.Close()
-  log.Println("Closing the network connection.\n", err)
-
+  if err != nil {
+    log.Println("Closing the connection with error:", err)
+  }
   // Exit the program
   os.Exit(0)
 }
