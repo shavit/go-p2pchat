@@ -14,6 +14,7 @@ import (
 
 // server contains the routing table
 type server struct {
+  blockchain *Blockchain
   done chan error
   conns map[uint32]*edge // Live connections
   ip net.IP
