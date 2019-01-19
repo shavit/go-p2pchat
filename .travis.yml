@@ -1,0 +1,6 @@
+language: go
+
+before_script:
+  - go get ./...
+
+script: go test -v ./...
