@@ -4,7 +4,7 @@ import (
   "testing"
 )
 
-func testCreateNewBlock(t *testing.T){
+func TestCreateNewBlock(t *testing.T){
   var b *Block
   b = NewBlock()
 
