@@ -1,6 +1,4 @@
-# Go gop2p Chat
-
-Chat and a gop2p network.
+# Go P2P Network
 
 [![Build Status](https://travis-ci.org/shavit/go-p2pchat.svg?branch=master)](https://travis-ci.org/shavit/go-p2pchat)
 
