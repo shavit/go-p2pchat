@@ -2,12 +2,12 @@ package main
 
 import (
   "os"
-  "../p2p"
+  "github.com/shavit/p2p"
 )
 
 func main(){
   var err error
-  
+
   if len(os.Args) <= 1 {
     // TODO: Loop through options here
     os.Exit(1)

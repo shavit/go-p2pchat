@@ -48,7 +48,7 @@ func (s *server) Start() (err error){
   go func() {
     // Block and wait for a signal to exit the program
     s.Close(<-s.done) // It will wait for the channel before executing
-    log.Println("\n\nSending exit notificaiton to all clients\n")
+    log.Println("\n\nSending exit notificaiton to all clients")
   }()
 
   // TODO: Check connections availability
